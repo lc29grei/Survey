@@ -28,7 +28,7 @@ public class SurveyAppServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		PrintWriter out = response.getWriter();
-        out.println("Hello World");
+        out.println("Update");
 	}
 
 	/**
