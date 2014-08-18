@@ -78,7 +78,7 @@
 								<!-- body content //-->
 								<div class="bodyContent col-xs-12 col-sm-12">
 									<div class= "text-center">
-										<a href="#" id="create-questionnaire" class="btn btn-lg surveyStartButton" data-role="none">Create Questionnaire<span class="icon icon-btn-arrow"></span></a>
+										<a href="/cps/jsp/create-questionnaire.jsp" id="create-questionnaire" class="btn btn-lg surveyStartButton" data-role="none">Create Questionnaire<span class="icon icon-btn-arrow"></span></a>
 										<br />
 										<a href="#" id="manage-questionnaire" class="btn btn-lg surveyStartButton" data-role="none">Manage Questionnaire<span class="icon icon-btn-arrow"></span></a>
 										<br />

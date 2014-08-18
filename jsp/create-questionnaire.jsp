@@ -14,11 +14,11 @@
     <title>Create Survey</title>
     
     <!-- Core CSS -->
-    <link rel="stylesheet" href="styles/bootstrap.css">
-    <link rel="stylesheet" href="styles/jquery.mobile-1.3.2.css">
-    <link rel="stylesheet" href="styles/overrides.css">
-    <link rel="stylesheet" href="styles/standards.css">
-    <link rel="stylesheet" href="styles/survey.css">
+    <link rel="stylesheet" href="/cps/styles/test/bootstrap.css">
+    <link rel="stylesheet" href="/cps/styles/test/jquery.mobile-1.3.2.css">
+    <link rel="stylesheet" href="/cps/styles/test/overrides.css">
+    <link rel="stylesheet" href="/cps/styles/test/actionbar.css">
+    <link rel="stylesheet" href="/cps/styles/test/survey.css">
 
 	<!-- font scripts -->
 	<script type="text/javascript" src="//use.typekit.net/xgk5ume.js"></script>
@@ -59,7 +59,7 @@
 		<article class="content-default">
 			<div class="container">
 				<div class="row" id="stickyRef1">
-					<div class="surveyStartContent"
+					<div class="surveyStartContent">
 						<!-- main content //-->
 						<div class="mainContent surveyStart">
 							<!-- section 1 //-->
