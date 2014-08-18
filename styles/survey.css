@@ -47,6 +47,18 @@ article.content-default {
 	border-bottom: 4px solid #0060d6;
 }
 
+.create-bottomButtons {
+	padding-top: 35px;
+}
+
+.create-multipleChoiceSection {
+	display: none;
+}
+
+.surveyQuestionNumberTypeAnswerTemplate {
+	display:none;
+}
+
 article.content-default .container {
 	padding-top: 60px !important;
 }
