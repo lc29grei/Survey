@@ -1,0 +1,60 @@
+/* CSS for Survey app */
+body{
+	background-color: #ffffff;
+}
+
+.mainContent {
+	background-color:#fff;
+	padding:30px;
+}
+
+/* start page */
+
+#create-questionnaire{
+	margin-bottom:20px;
+	margin-top:100px;
+}
+
+#manage-questionnaire{
+	margin-bottom: 20px;
+}
+
+.questionLeftText  {
+	margin-bottom: 100px;
+}
+
+.create-surveyQuestionTextArea {
+	height:100px !important;
+}
+
+.surveyAnswerTextArea {
+	height: 100px !important;
+}
+
+.ui-fullsize .ui-btn-inner {
+	font-size: 16px !important;
+	font-weight: 500 !important;
+}
+
+.userProfile {
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+article.content-default {
+	padding-bottom: 0px !important;
+	height: 0px !important;
+	border-bottom: 4px solid #0060d6;
+}
+
+article.content-default .container {
+	padding-top: 60px !important;
+}
+
+article.content-default .bodyContent {
+	box-shadow: none !important;
+}
+
+.create-multipleChoiceSelect {
+	margin-bottom: 20px;
+}
