@@ -1,4 +1,4 @@
-package com.axa.servlets;
+package com.axa.cps.servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -29,8 +29,7 @@ public class SurveyAppServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, 
     	      HttpServletResponse response) throws ServletException, IOException 
     	  {
-    	request.setAttribute("result", "This is the result of the servlet call");
-    	request.getRequestDispatcher("/index.jsp").forward(request, response);
+    	     doPost(request, response);
     	  }
     	
 
@@ -39,6 +38,23 @@ public class SurveyAppServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		// reading the user input
+	    String color= request.getParameter("color");    
+	    PrintWriter out = response.getWriter();
+	    out.println (
+	      "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n" +
+	      "<html> \n" +
+	        "<head> \n" +
+	          "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\"> \n" +
+	          "<title> My first jsp  </title> \n" +
+	        "</head> \n" +
+	        "<body> \n" +
+	          "<font size=\"12px\" color=\"" + color + "\">" +
+	            "Hello World" +
+	          "</font> \n" +
+	        "</body> \n" +
+	      "</html>" 
+	    ); 
 	}
 
 }

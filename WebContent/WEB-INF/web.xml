@@ -13,10 +13,10 @@
     <description></description>
     <display-name>SurveyAppServlet</display-name>
     <servlet-name>SurveyAppServlet</servlet-name>
-    <servlet-class>com.axa.servlets.SurveyAppServlet</servlet-class>
+    <servlet-class>com.axa.cps.servlets.SurveyAppServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>SurveyAppServlet</servlet-name>
-    <url-pattern>/SurveyAppServlet</url-pattern>
+    <url-pattern>/survey</url-pattern>
   </servlet-mapping>
 </web-app>

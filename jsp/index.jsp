@@ -8,6 +8,10 @@
 		<title> My first JSP   </title>
 	</head>	
 	<body>		
-		<p>The result is ${result}</p>
+		<form action="/cps/survey" method="post">			
+			 Please enter a color <br>
+			<input type="text" name="color"size="20px">
+			<input type="submit" value="submit">						
+		</form>		
 	</body>	
 </html>
