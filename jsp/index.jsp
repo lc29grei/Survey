@@ -8,10 +8,17 @@
 		<title> My first JSP   </title>
 	</head>	
 	<body>		
-		<form action="/cps/survey" method="post">			
+		<!-- <form action="/cps/survey" method="post">			
 			 Please enter a color <br>
 			<input type="text" name="color"size="20px">
 			<input type="submit" value="submit">						
-		</form>		
+		</form>	 -->	
+		
+		<form action="/cps/survey">  
+			Subject:<input type="text" name="subject"><br/>  
+			Text:<textarea rows="10" cols="70" name="msg"></textarea><br/>  
+			<input type="submit" value="send"/>  
+		</form>  
+		
 	</body>	
 </html>
