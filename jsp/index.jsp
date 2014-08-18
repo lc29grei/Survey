@@ -3,7 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
 	"http://www.w3.org/TR/html4/loose.dtd">
 
-<!-- <form action="/cps/survey"> -->
+<!-- <form action="/cps/survey">---------------------------------------------------------------------------------------------------- -->
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -15,11 +15,11 @@
     <title>Compliance Questionnaire Dashboard</title>
     
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="styles/bootstrap.css">
-    <link rel="stylesheet" href="styles/jquery.mobile-1.3.2.css">
-    <link rel="stylesheet" href="styles/overrides.css">
-    <link rel="stylesheet" href="styles/actionbar.css">
-    <link rel="stylesheet" href="styles/survey.css">
+    <link rel="stylesheet" href="/cps/styles/test/bootstrap.css">
+    <link rel="stylesheet" href="/cps/styles/test/jquery.mobile-1.3.2.css">
+    <link rel="stylesheet" href="/cps/styles/test/overrides.css">
+    <link rel="stylesheet" href="/cps/styles/test/actionbar.css">
+    <link rel="stylesheet" href="/cps/styles/test/survey.css">
     
     
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -50,7 +50,7 @@
 				<!-- body content //-->
 				<div class="col-xs-3">
 					<div class="axaLogo">
-						<img src="images/logo-AXA.png" height="52px">
+						<img src="/cps/styles/test/images/logo-AXA.png" height="52px">
 					</div>
 				</div>
 				<div class="col-xs-3"></div>
