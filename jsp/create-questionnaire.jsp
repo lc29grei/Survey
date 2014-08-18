@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/cps/styles/test/bootstrap.css">
     <link rel="stylesheet" href="/cps/styles/test/jquery.mobile-1.3.2.css">
     <link rel="stylesheet" href="/cps/styles/test/overrides.css">
-    <link rel="stylesheet" href="/cps/styles/test/actionbar.css">
+    <link rel="stylesheet" href="/cps/styles/test/standards.css">
     <link rel="stylesheet" href="/cps/styles/test/survey.css">
 
 	<!-- font scripts -->
@@ -39,7 +39,7 @@
 				<!-- body content //-->
 				<div class="col-xs-3">
 					<div class="axaLogo">
-						<img src="images/logo-AXA.png" height="52px">
+						<img src="/cps/styles/test/images/logo-AXA.png" height="52px">
 					</div>
 				</div>
 				<div class="col-xs-3"></div>
@@ -209,16 +209,16 @@
 	 </div>
     
   <!-- jQuery -->
-  <script src="js/jquery.js">
+  <script src="/cps/js/jquery.js">
   </script>
   <!-- jQuery (necessary for JqueryMobile plugins) -->
-  <script src="js/jquery-1.9.1.js">
+  <script src="/cps/js/jquery-1.9.1.js">
   </script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js">
+  <script src="/cps/js/bootstrap.min.js">
   </script>
   <!-- jQuery (includes all JqueryMobile plugins) -->
-  <script src="js/jquery.mobile-1.3.2.min.js">
+  <script src="/cps/js/jquery.mobile-1.3.2.min.js">
   </script>
   
   

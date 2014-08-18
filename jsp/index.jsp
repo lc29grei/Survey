@@ -82,7 +82,9 @@
 										<br />
 										<a href="#" id="manage-questionnaire" class="btn btn-lg surveyStartButton" data-role="none">Manage Questionnaire<span class="icon icon-btn-arrow"></span></a>
 										<br />
-										<a href="#" id="manage-questionnaire" class="btn btn-lg surveyStartButton" data-role="none">Reports<span class="icon icon-btn-arrow"></span></a>
+										<a href="#" id="reports" class="btn btn-lg surveyStartButton" data-role="none">Reports<span class="icon icon-btn-arrow"></span></a>
+										<br />
+										<a href="/cps/jsp/send_email.jsp" id="email" class="btn btn-lg surveyStartButton" data-role="none">Email<span class="icon icon-btn-arrow"></span></a>
 									</div>
 								</div>
 							</div>
