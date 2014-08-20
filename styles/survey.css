@@ -19,11 +19,6 @@ body{
 	margin-bottom: 20px;
 }
 
-#reports{
-	margin-bottom: 20px;
-	
-}
-
 .questionLeftText  {
 	margin-bottom: 100px;
 }
@@ -58,6 +53,20 @@ article.content-default {
 
 .create-multipleChoiceSection {
 	display: none;
+}
+
+
+.create-deleteImage {
+	background: url("../images/delete-icon.png") no-repeat;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+textarea {
+   resize: none;
 }
 
 .surveyQuestionNumberTypeAnswerTemplate {
