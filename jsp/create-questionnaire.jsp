@@ -14,11 +14,11 @@
     <title>Create Survey</title>
     
     <!-- Core CSS -->
-    <link rel="stylesheet" href="/cps/styles/test/bootstrap.css">
-    <link rel="stylesheet" href="/cps/styles/test/jquery.mobile-1.3.2.css">
-    <link rel="stylesheet" href="/cps/styles/test/overrides.css">
-    <link rel="stylesheet" href="/cps/styles/test/standards.css">
-    <link rel="stylesheet" href="/cps/styles/test/survey.css">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/jquery.mobile-1.3.2.css">
+    <link rel="stylesheet" href="styles/overrides.css">
+    <link rel="stylesheet" href="styles/standards.css">
+    <link rel="stylesheet" href="styles/survey.css">
 
 	<!-- font scripts -->
 	<script type="text/javascript" src="//use.typekit.net/xgk5ume.js"></script>
@@ -39,7 +39,7 @@
 				<!-- body content //-->
 				<div class="col-xs-3">
 					<div class="axaLogo">
-						<img src="/cps/styles/test/images/logo-AXA.png" height="52px">
+						<img src="images/logo-AXA.png" height="52px">
 					</div>
 				</div>
 				<div class="col-xs-3"></div>
@@ -59,7 +59,7 @@
 		<article class="content-default">
 			<div class="container">
 				<div class="row" id="stickyRef1">
-					<div class="surveyStartContent">
+					<div class="surveyStartContent"
 						<!-- main content //-->
 						<div class="mainContent surveyStart">
 							<!-- section 1 //-->
@@ -69,65 +69,69 @@
 									<!-- form starts -->
 									<form id="createQuestionnaireForm">
 										<div class="form-columns-inner">
-											
+											<div class="row">
 												<div class="survey-title-container col-xs-10 col-xs-offset-1" style="padding-left:30px; padding-right: 30px;">
 													<label for="create-questionnaire-title">Title:</label>
 													<input name="create-questionnaire-title" id="create-questionnaire-title" value="" type="text" maxlength="50">
 												</div>
-																	
-											<div class="surveyQuestionNumberTypeAnswer col-xs-12 col-xl-12">
-												
-												<div class="surveyQuestionLeftDiv col-xs-1">
-													<div class="questionLeftText"><h3>Q<span class="questionNumber">1</span>:</h3></div>
-												</div>
-												
-												<div class="surveyQuestionTypeAnswer col-xs-10">
-													<label for="textarea">Enter Question:</label>
-													<textarea class="create-surveyQuestionTextArea" cols="40" rows="20" name="textarea" id="textarea"></textarea>
-													
-													<!-- radio answer type //-->
-													<label for="selectAnswerType">Select Answer Type:</label>
-													<fieldset class="selectAnswerType">
-														<input name="selectAnswerTypeName" class="create-yesNoSelect" id="create-yesNoSelect" value="yesno" checked="checked" type="radio">
-														<label for="create-yesNoSelect">Yes/No</label>
-														<input name="selectAnswerTypeName" class="create-shortAnswerSelect" id="create-shortAnswerSelect" value="short" type="radio">
-														<label for="create-shortAnswerSelect">Short Answer</label>
-														<input name="selectAnswerTypeName" class="create-multipleChoiceSelect" id="create-multipleChoiceSelect" value="multiple" type="radio">
-														<label for="create-multipleChoiceSelect">Multiple Choice</label>
-													</fieldset>
-													
-													<!-- if multiple choice selected -->
-													<div class="create-multipleChoiceSection" id="create-multipleChoiceSection">
-														<label for="answersDropDown">Number of Answers:</label>
-														<select class="answersDropDown" id="answersDropDown">
-															<option value="3">Three</option>
-															<option value="4">Four</option>
-															<option value="5">Five</option>
-														</select>
-														
-														<!-- multiple choice answers -->
-														<label for="create-AnswerA">Answer A:</label>
-														<input name="create-AnswerA" id="create-AnswerA" value="" type="text">
-														
-														<label for="create-AnswerB">Answer B:</label>
-														<input name="create-AnswerB" id="create-AnswerB" value="" type="text">
-														
-														<label for="create-AnswerC">Answer C:</label>
-														<input name="create-AnswerC" id="create-AnswerC" value="" type="text">
-														
-														<div class="create-AnswerDHideShow">
-															<label for="create-AnswerD">Answer D:</label>
-															<input name="create-AnswerD" class="create-AnswerD" id="create-AnswerD" value="" type="text">
+											</div>
+											
+											<div class="surveyQuestionNumberTypeAnswer">
+												<div class="row">									
+													<div class=" col-xs-12 col-xl-12">
+														<div class="surveyQuestionLeftDiv col-xs-1">
+															<div class="questionLeftText"><h3>Q<span class="questionNumber">1</span>:</h3></div>
 														</div>
 														
-														<div class="create-AnswerEHideShow">
-															<label for="create-AnswerE">Answer E:</label>
-															<input name="create-AnswerE" class="create-AnswerE" id="create-AnswerE" value="" type="text">
+														<div class="surveyQuestionTypeAnswer col-xs-10">
+															<label for="textarea">Enter Question:</label>
+															<textarea class="create-surveyQuestionTextArea" cols="40" rows="20" name="textarea" id="textarea"></textarea>
+															
+															<!-- radio answer type //-->
+															<label for="selectAnswerType">Select Answer Type:</label>
+															<fieldset class="selectAnswerType">
+																<input name="selectAnswerTypeName" class="create-yesNoSelect" id="create-yesNoSelect" value="yesno" checked="checked" type="radio">
+																<label for="create-yesNoSelect">Yes/No</label>
+																<input name="selectAnswerTypeName" class="create-shortAnswerSelect" id="create-shortAnswerSelect" value="short" type="radio">
+																<label for="create-shortAnswerSelect">Short Answer</label>
+																<input name="selectAnswerTypeName" class="create-multipleChoiceSelect" id="create-multipleChoiceSelect" value="multiple" type="radio">
+																<label for="create-multipleChoiceSelect">Multiple Choice</label>
+															</fieldset>
+															
+															<!-- if multiple choice selected -->
+															<div class="create-multipleChoiceSection" id="create-multipleChoiceSection">
+																<label for="answersDropDown">Number of Answers:</label>
+																<select class="answersDropDown" id="answersDropDown">
+																	<option value="3">Three</option>
+																	<option value="4">Four</option>
+																	<option value="5">Five</option>
+																</select>
+																
+																<!-- multiple choice answers -->
+																<label for="create-AnswerA">Answer A:</label>
+																<input name="create-AnswerA" id="create-AnswerA" value="" type="text">
+																
+																<label for="create-AnswerB">Answer B:</label>
+																<input name="create-AnswerB" id="create-AnswerB" value="" type="text">
+																
+																<label for="create-AnswerC">Answer C:</label>
+																<input name="create-AnswerC" id="create-AnswerC" value="" type="text">
+																
+																<div class="create-AnswerDHideShow">
+																	<label for="create-AnswerD">Answer D:</label>
+																	<input name="create-AnswerD" class="create-AnswerD" id="create-AnswerD" value="" type="text">
+																</div>
+																
+																<div class="create-AnswerEHideShow">
+																	<label for="create-AnswerE">Answer E:</label>
+																	<input name="create-AnswerE" class="create-AnswerE" id="create-AnswerE" value="" type="text">
+																</div>
+															</div>
 														</div>
 													</div>
 												</div>
 											</div>
-										</div>					
+										</div>	
 										<div class="create-bottomButtons col-xs-10 col-xs-offset-1" style="padding-left:30px; padding-right: 30px;">				
 											<!-- Add question button -->
 											<button class="btn" data-role="none" type="button" onclick="addQuestion()">Add Question</button>
@@ -136,65 +140,6 @@
 											<button class="btn" type="submit" data-role="none">Save</button>
 											<button class="btn" type="submit" data-role="none">Close</button>
 										</div>
-										
-										<!-- add question template html -->
-										<div class="surveyQuestionNumberTypeAnswerTemplate col-xs-12 col-xl-12">
-												
-												<div class="surveyQuestionLeftDiv col-xs-1">
-													<div class="questionLeftText"><h3>Q<span class="questionNumber"></span>:</h3></div>
-												</div>
-												
-												<div class="surveyQuestionTypeAnswer col-xs-10">
-													<label for="textarea">Enter Question:</label>
-													<textarea class="create-surveyQuestionTextArea" cols="40" rows="20" name="textarea" id="textarea"></textarea>
-													
-													<!-- radio answer type //-->
-													<label for="selectAnswerType">Select Answer Type:</label>
-													<fieldset class="selectAnswerType">
-														<input name="selectAnswerTypeName" class="create-yesNoSelect" id="create-yesNoSelect" value="yesno" checked="checked" type="radio">
-														<label for="create-yesNoSelect">Yes/No</label>
-														<input name="selectAnswerTypeName" class="create-shortAnswerSelect" id="create-shortAnswerSelect" value="short" type="radio">
-														<label for="create-shortAnswerSelect">Short Answer</label>
-														<input name="selectAnswerTypeName" class="create-multipleChoiceSelect" id="create-multipleChoiceSelect" value="multiple" type="radio">
-														<label for="create-multipleChoiceSelect">Multiple Choice</label>
-													</fieldset>
-													
-													<!-- if multiple choice selected -->
-													<div class="create-multipleChoiceSection" id="create-multipleChoiceSection">
-														<label for="answersDropDown">Number of Answers:</label>
-														<select class="answersDropDown" id="answersDropDown">
-															<option value="3">Three</option>
-															<option value="4">Four</option>
-															<option value="5">Five</option>
-														</select>
-														
-														<!-- multiple choice answers -->
-														<label for="create-AnswerA">Answer A:</label>
-														<input name="create-AnswerA" id="create-AnswerA" value="" type="text">
-														
-														<label for="create-AnswerB">Answer B:</label>
-														<input name="create-AnswerB" id="create-AnswerB" value="" type="text">
-														
-														<label for="create-AnswerC">Answer C:</label>
-														<input name="create-AnswerC" id="create-AnswerC" value="" type="text">
-														
-														<div class="create-AnswerDHideShow">
-															<label for="create-AnswerD">Answer D:</label>
-															<input name="create-AnswerD" class="create-AnswerD" id="create-AnswerD" value="" type="text">
-														</div>
-														
-														<div class="create-AnswerEHideShow">
-															<label for="create-AnswerE">Answer E:</label>
-															<input name="create-AnswerE" class="create-AnswerE" id="create-AnswerE" value="" type="text">
-														</div>
-													</div>
-												</div>
-												
-												<div class="create-deleteCol col-xs-1"><span style="padding-top:10px;">DELETE IMAGE</span>
-												</div>
-												
-											</div>
-										
 									</form>
 									<!-- form ends -->
 								</div>
@@ -209,16 +154,16 @@
 	 </div>
     
   <!-- jQuery -->
-  <script src="/cps/js/jquery.js">
+  <script src="js/jquery.js">
   </script>
   <!-- jQuery (necessary for JqueryMobile plugins) -->
-  <script src="/cps/js/jquery-1.9.1.js">
+  <script src="js/jquery-1.9.1.js">
   </script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="/cps/js/bootstrap.min.js">
+  <script src="js/bootstrap.min.js">
   </script>
   <!-- jQuery (includes all JqueryMobile plugins) -->
-  <script src="/cps/js/jquery.mobile-1.3.2.min.js">
+  <script src="js/jquery.mobile-1.3.2.min.js">
   </script>
   
   
@@ -266,12 +211,28 @@
 				$(this).parents('.surveyQuestionTypeAnswer').find('.create-AnswerEHideShow').show();
 			}
 		});
-	
+		
+		
+		// delete row click
+		$( ".create-deleteImage" ).on( "click", function() {
+			alert("Delete clicked");
+		});
 	});
 	
 	function addQuestion() {
 		totalQuestions++;
+		$('<div class="surveyQuestionNumberTypeAnswer"><div class="row"><div class=" col-xs-12 col-xl-12"><div class="surveyQuestionLeftDiv col-xs-1"><div class="questionLeftText"><h3>Q<span class="questionNumber"></span>:</h3></div></div><div class="surveyQuestionTypeAnswer col-xs-10"><label for="textarea">Enter Question:</label><textarea class="create-surveyQuestionTextArea" cols="40" rows="20" name="textarea" id="textarea"></textarea><label for="selectAnswerType">Select Answer Type:</label><fieldset class="selectAnswerType"><input name="selectAnswerTypeName" class="create-yesNoSelect" id="create-yesNoSelect" value="yesno" checked="checked" type="radio"><label for="create-yesNoSelect">Yes/No</label><input name="selectAnswerTypeName" class="create-shortAnswerSelect" id="create-shortAnswerSelect" value="short" type="radio"><label for="create-shortAnswerSelect">Short Answer</label><input name="selectAnswerTypeName" class="create-multipleChoiceSelect" id="create-multipleChoiceSelect" value="multiple" type="radio"><label for="create-multipleChoiceSelect">Multiple Choice</label></fieldset><div class="create-multipleChoiceSection" id="create-multipleChoiceSection"><label for="answersDropDown">Number of Answers:</label><select class="answersDropDown" id="answersDropDown"><option value="3">Three</option><option value="4">Four</option><option value="5">Five</option></select><label for="create-AnswerA">Answer A:</label><input name="create-AnswerA" id="create-AnswerA" value="" type="text"><label for="create-AnswerB">Answer B:</label><input name="create-AnswerB" id="create-AnswerB" value="" type="text"><label for="create-AnswerC">Answer C:</label><input name="create-AnswerC" id="create-AnswerC" value="" type="text"><div class="create-AnswerDHideShow"><label for="create-AnswerD">Answer D:</label><input name="create-AnswerD" class="create-AnswerD" id="create-AnswerD" value="" type="text"></div><div class="create-AnswerEHideShow"><label for="create-AnswerE">Answer E:</label><input name="create-AnswerE" class="create-AnswerE" id="create-AnswerE" value="" type="text"></div></div></div><div class="create-deleteCol col-xs-1"><span class="create-deleteImage"></span></div></div></div></div>').insertBefore('.create-bottomButtons');
 		
+		$(".mainContent").trigger('create');
+		
+		updateQuestionNumbers();
+	}
+	
+	function updateQuestionNumbers() {
+	
+		$(".questionNumber").each(function( index ) {
+			$(this).html(index + 1);
+		});
 	}
 	
 	
