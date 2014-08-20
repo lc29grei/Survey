@@ -59,7 +59,7 @@
 		<article class="content-default">
 			<div class="container">
 				<div class="row" id="stickyRef1">
-					<div class="surveyStartContent"
+					<div class="surveyStartContent">
 						<!-- main content //-->
 						<div class="mainContent surveyStart">
 							<!-- section 1 //-->
