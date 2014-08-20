@@ -40,7 +40,7 @@ MimeMessage message = new MimeMessage(session);
  //3rd step)send message  
  Transport.send(message);  
   
- System.out.println("Done");  
+ System.out.println("Send Message");  
       
 }  
 }  

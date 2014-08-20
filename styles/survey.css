@@ -57,7 +57,7 @@ article.content-default {
 
 
 .create-deleteImage {
-	background: url("../images/delete-icon.png") no-repeat;
+	background: url("test/images/delete-icon.png") no-repeat;
 	height: 30px;
 	width: 30px;
 	display: inline-block;

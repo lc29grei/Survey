@@ -28,6 +28,7 @@ import com.axa.cps.mail.Mailer;
  */
 public class SurveyAppServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	//resizeable array lists
 	private final ArrayList<String> newHireRecipients = new ArrayList<String>();
 	private final ArrayList<String> developerRecipients = new ArrayList<String>();
 	private final ArrayList<String> testerRecipients = new ArrayList<String>();
@@ -38,7 +39,8 @@ public class SurveyAppServlet extends HttpServlet {
      * @see HttpServlet#HttpServlet()
      */
     public SurveyAppServlet() {
-    	super();
+    	//calls parent constructor
+		super();
     	//populate newHire email list
     	newHireRecipients.add("Luke.Greiner@axa-equitable.com");
     	newHireRecipients.add("Paul.Soderberg@axa-equitable.com");
@@ -51,9 +53,6 @@ public class SurveyAppServlet extends HttpServlet {
     	testerRecipients.add("Luke.Greiner@axa-equitable.com");
     	testerRecipients.add("Paul.Soderberg@axa-equitable.com");
     	   	
-    	
-        
-        // TODO Auto-generated constructor stub
     }
 
 	/**
@@ -61,9 +60,9 @@ public class SurveyAppServlet extends HttpServlet {
 	 */
     protected void doGet(HttpServletRequest request, 
     	      HttpServletResponse response) throws ServletException, IOException 
-    	  {
-    	     doPost(request, response);
-    	  }
+	  {
+	     doPost(request, response);
+	  }
     	
 
 	/**
@@ -78,6 +77,7 @@ public class SurveyAppServlet extends HttpServlet {
 		String subject= request.getParameter("subject_email");  
 		String messageText= request.getParameter("text_email");  
 		String result="";
+		//set email list to correct array list
 		if(to.equals("newHires")){
 			emailList=newHireRecipients;
 		}
@@ -96,6 +96,7 @@ public class SurveyAppServlet extends HttpServlet {
 	   String host = "mailhost.equitable.com";
 
 	   // Get system properties object
+	   // Hashtable to add keys to
 	   Properties properties = System.getProperties();
 
 	   //Set credentials
@@ -110,7 +111,6 @@ public class SurveyAppServlet extends HttpServlet {
 	   // Get the default Session object.
 	   Session mailSession = Session.getDefaultInstance(properties);
 
-	
 	   //send an email to each person in mailing list
 		   try{
 		      // Create a default MimeMessage object.
@@ -133,27 +133,27 @@ public class SurveyAppServlet extends HttpServlet {
 		      
 		   }catch (MessagingException mex) {
 		      mex.printStackTrace();
-		      result = "Error: unable to send message...."+mex;
+		      result = "Error: unable to send message...." + mex;
 		      
 		      
 		   }
 	   
 	   //print out for debugging
 	   PrintWriter out = response.getWriter();
-			    out.println (
-			      "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n" +
-			      "<html> \n" +
-			        "<head> \n" +
-			          "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\"> \n" +
-			          "<title> My first jsp  </title> \n" +
-			        "</head> \n" +
-			        "<body> \n" +
-			          "<font size=\"12px\" color=\"red\">" +
-			            "" +result+" "+to+" "+subject+" "+messageText+
-			          "</font> \n" +
-			        "</body> \n" +
-			      "</html>" 
-			    ); 
+	    out.println (
+	      "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n" +
+	      "<html> \n" +
+	        "<head> \n" +
+	          "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\"> \n" +
+	          "<title> My first jsp  </title> \n" +
+	        "</head> \n" +
+	        "<body> \n" +
+	          "<font size=\"12px\" color=\"red\">" +
+	            "" +result+" "+to+" "+subject+" "+messageText+
+	          "</font> \n" +
+	        "</body> \n" +
+	      "</html>" 
+	    ); 
 	}
 }
 

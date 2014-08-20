@@ -13,12 +13,12 @@
     
     <title>Create Survey Title</title>
     
-    <!-- Core CSS -->
-    <link rel="stylesheet" href="cps/styles/test/bootstrap.css">
-    <link rel="stylesheet" href="cps/styles/test/jquery.mobile-1.3.2.css">
-    <link rel="stylesheet" href="cps/styles/test/overrides.css">
-    <link rel="stylesheet" href="cps/styles/test/standards.css">
-    <link rel="stylesheet" href="cps/styles/test/survey.css">
+     <!-- Core CSS -->
+    <link rel="stylesheet" href="/cps/styles/test/bootstrap.css">
+    <link rel="stylesheet" href="/cps/styles/test/jquery.mobile-1.3.2.css">
+    <link rel="stylesheet" href="/cps/styles/test/overrides.css">
+    <link rel="stylesheet" href="/cps/styles/test/standards.css">
+    <link rel="stylesheet" href="/cps/styles/test/survey.css">
 
 	<!-- font scripts -->
 	<script type="text/javascript" src="//use.typekit.net/xgk5ume.js"></script>
@@ -87,17 +87,17 @@
 		</article>
 	 </div>
     
-  <!-- jQuery -->
-  <script src="cps/js/jquery.js">
+    <!-- jQuery -->
+  <script src="/cps/js/jquery.js">
   </script>
   <!-- jQuery (necessary for JqueryMobile plugins) -->
-  <script src="cps/js/jquery-1.9.1.js">
+  <script src="/cps/js/jquery-1.9.1.js">
   </script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="cps/js/bootstrap.min.js">
+  <script src="/cps/js/bootstrap.min.js">
   </script>
   <!-- jQuery (includes all JqueryMobile plugins) -->
-  <script src="cps/js/jquery.mobile-1.3.2.min.js">
+  <script src="/cps/js/jquery.mobile-1.3.2.min.js">
   </script>
   
     
