@@ -27,6 +27,9 @@ import com.axa.cps.mail.Mailer;
  * Servlet implementation class SurveyAppServlet
  */
 public class SurveyAppServlet extends HttpServlet {
+	/**
+	 * 
+	 */
 	private static final long serialVersionUID = 1L;
 	//resizeable array lists
 	private final ArrayList<String> newHireRecipients = new ArrayList<String>();
@@ -47,10 +50,10 @@ public class SurveyAppServlet extends HttpServlet {
     	
     	//populate developer email list
     	developerRecipients.add("Luke.Greiner@axa-equitable.com");
-    	developerRecipients.add("Paul.Soderberg@axa-equitable.com");
+    	developerRecipients.add("Eric.Bishop@axa-equitable.com");
     	
     	//populate recipient email list
-    	testerRecipients.add("Luke.Greiner@axa-equitable.com");
+    	testerRecipients.add("Eric.Bishop@axa-equitable.com");
     	testerRecipients.add("Paul.Soderberg@axa-equitable.com");
     	   	
     }
@@ -148,9 +151,9 @@ public class SurveyAppServlet extends HttpServlet {
 	          "<title> My first jsp  </title> \n" +
 	        "</head> \n" +
 	        "<body> \n" +
-	          "<font size=\"12px\" color=\"red\">" +
-	            "" +result+" "+to+" "+subject+" "+messageText+
-	          "</font> \n" +
+	          
+	            " "+result+" "+to+" "+subject+" "+messageText+
+	          
 	        "</body> \n" +
 	      "</html>" 
 	    ); 
