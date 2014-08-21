@@ -21,8 +21,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-import com.axa.cps.mail.Mailer;
-
 /**
  * Servlet implementation class SurveyAppServlet
  */
